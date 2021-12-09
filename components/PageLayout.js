@@ -14,9 +14,8 @@ export default function PageLayout({children, className}) {
 
             <footer className="page-footer">
                 <div>
-                <a href="#">courses</a>{' | '}
-                <a href="#">github</a>{' | '}
-                <a href="#">facebook</a>
+                <a href="https://www.udemy.com/course/nextjs-with-sanity-cms-serverless-blog-app-w-vercel/">Created from</a>{' | '}
+                <a href="https://github.com/Angel-del-dev?tab=repositories">Github</a>{' | '}
                 </div>
             </footer>
         </Container>

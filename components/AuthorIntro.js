@@ -6,7 +6,7 @@ export default function AuthorIntro() {
       <Col md="8">
         <Media className="mb-4 admin-intro">
           <img
-            roundedCircle
+          style={{borderRadius:"50%"}}
             width={64}
             height={64}
             className="mr-3"
