@@ -14,4 +14,6 @@ import '../styles/index.scss';
 
 
 
-export default ({Component, pageProps}) => <Component {...pageProps} />
+const all =  ({Component, pageProps}) => <Component {...pageProps} />
+
+export default all;

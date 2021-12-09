@@ -59,7 +59,6 @@ export default function Home({ blogs, preview }) {
 
   return (
     <PageLayout>
-      {preview && <PreviewAlert />}
       <AuthorIntro />
       <FilteringMenu
         filter={filter}

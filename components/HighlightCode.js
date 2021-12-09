@@ -3,10 +3,11 @@ import { createRef, useEffect } from "react";
 import { findDOMNode } from "react-dom";
 
 const HighLightCode = ({ children, language}) => {
+  
   const code = createRef();
-
   useEffect(() => {
-    highlight.highlightElement(findDOMNode(code.current));
+    // highlight.highlightElement(findDOMNode(code.current));
+    highlight.highlightElement(code.childRef.current);
   }, []);
 
   return (

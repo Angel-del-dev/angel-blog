@@ -4,25 +4,25 @@ import PageLayout from "../../components/PageLayout";
 import BlogContent from "../../components/BlogContent";
 import { getAllBlogs, getBlogBySlug } from "../../lib/api";
 
-const BlogDetail = ({ blog }) => {
+export default function BlogDetail({ blog }) {
   return (
     <PageLayout className="blog-detail-page">
       <Row>
         <Col md={{ span: 10, offset: 1 }}>
           <BlogHeader
-            title={blog.title}
-            subtitle={blog.subtitle}
-            coverImage={blog.coverImage}
-            author={blog.author}
-            date={blog.date}
+            title={blog ? blog.title : "Title"}
+            subtitle={blog ? blog.subtitle : "Subtitle"}
+            coverImage={blog ? blog.coverImage : "coverImage"}
+            author={blog ? blog.author : "Author"}
+            date={blog ? blog.date : "Date"}
           />
           <hr />
-          <BlogContent content={blog.content} />
+          <BlogContent content={blog ? blog.content : "Title"} />
         </Col>
       </Row>
     </PageLayout>
   );
-};
+}
 
 export async function getStaticProps({ params }) {
   const blog = await getBlogBySlug(params.slug);
@@ -42,5 +42,3 @@ export async function getStaticPaths() {
     fallback: true,
   };
 }
-
-export default BlogDetail;

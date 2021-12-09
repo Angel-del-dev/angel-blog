@@ -1,5 +1,4 @@
 
-
 export default function BlogHeader({title, subtitle, coverImage, date, author}) {
     return (
         <div className="blog-detail-header">

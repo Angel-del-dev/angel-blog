@@ -1,11 +1,11 @@
-import { Col, Image, Media, Row } from "react-bootstrap";
+import { Col, Media, Row } from "react-bootstrap";
 
 export default function AuthorIntro() {
   return (
     <Row>
       <Col md="8">
         <Media className="mb-4 admin-intro">
-          <Image
+          <img
             roundedCircle
             width={64}
             height={64}
