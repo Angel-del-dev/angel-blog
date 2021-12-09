@@ -4,14 +4,14 @@ import { urlFor } from '../lib/api';
 
 const serializers = {
     types: {
-      code: ({node: {language, code, fileName}}) => {
-        return (
-          <HighLightCode language={language}>
-              {code}
-              <div className="code-filename">{fileName}</div>
-          </HighLightCode>
-        );
-      },
+      // code: ({node: {language, code, fileName}}) => {
+      //   return (
+      //     <HighLightCode language={language}>
+      //         {code}
+      //         <div className="code-filename">{fileName}</div>
+      //     </HighLightCode>
+      //   );
+      // },
       image: ({node: {asset, alt}}) => {
         return(
           <div className="blog-image">
