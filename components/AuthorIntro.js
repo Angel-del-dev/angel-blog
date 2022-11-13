@@ -16,8 +16,7 @@ export default function AuthorIntro() {
           <Media.Body>
             <h5 className="font-weight-bold mb-0">¡Saludos!</h5>
             <p className="welcome-text">
-              Me llamo Àngel, soy desarrollador full stack y este es mi
-              blog.
+              Me llamo Àngel, me apasiona el terror y este es mi pequeño blog.
             </p>
           </Media.Body>
         </Media>
